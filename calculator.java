@@ -4,7 +4,7 @@ public class calculator {
     public static void summ(int a, int b){
         System.out.println(a+b);
     }
-    public static void sub(int a, int b){
+    public static void subb(int a, int b){
         System.out.println(a-b);
     }
     public static void multi(int a, int b){
@@ -23,7 +23,7 @@ public class calculator {
             summ(a, b);
         }
         else if(c == "S"){
-            sub(a, b);
+            subb(a, b);
         }
         else if(c == "M"){
             multi(a, b);
