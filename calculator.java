@@ -4,6 +4,16 @@ public class calculator {
     public static void divid(int a, int b){
         System.out.println(a/b);
     }
+    public static void subb(int a, int b){
+        System.out.println(a-b);
+    }
+
+    public static void multi(int a, int b){
+        System.out.println(a*b);
+    }
+    public static void summ(int a, int b){
+        System.out.println(a+b);
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -12,7 +22,17 @@ public class calculator {
         String c = sc.next();
         if(c == "D"){
             divid(a, b);
+        if(c == "M"){
+            multi(a, b);
+        if(c == "S"){
+            subb(a, b);
+        if(c == "A"){
+            summ(a, b);
         }
         sc.close();
     }
 }
+}
+    }
+}
+
