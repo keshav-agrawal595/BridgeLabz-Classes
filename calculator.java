@@ -11,7 +11,7 @@ public class calculator {
         int b = sc.nextInt();
         String c = sc.next();
         if(c == "A"){
-            sum(a, b);
+            summ(a, b);
         }
         sc.close();
     }
