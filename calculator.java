@@ -3,6 +3,8 @@ import java.util.*;
 public class calculator {
     public static void divid(int a, int b){
         System.out.println(a/b);
+    public static void subb(int a, int b){
+        System.out.println(a-b);
     }
 
     public static void multi(int a, int b){
@@ -17,6 +19,8 @@ public class calculator {
             divid(a, b);
         if(c == "M"){
             multi(a, b);
+        if(c == "S"){
+            subb(a, b);
         }
         sc.close();
     }
