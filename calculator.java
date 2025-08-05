@@ -5,6 +5,9 @@ public class calculator {
         System.out.println(a/b);
     }
 
+    public static void multi(int a, int b){
+        System.out.println(a*b);
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -12,6 +15,8 @@ public class calculator {
         String c = sc.next();
         if(c == "D"){
             divid(a, b);
+        if(c == "M"){
+            multi(a, b);
         }
         sc.close();
     }
