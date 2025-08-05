@@ -1,7 +1,7 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class calculator {
-    public static void sum(int a, int b){
+    public static void summ(int a, int b){
         System.out.println(a+b);
     }
     public static void sub(int a, int b){
@@ -18,18 +18,19 @@ public class calculator {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        String c = sc.nextLine();
+        String c = sc.next();
         if(c == "A"){
             sum(a, b);
         }
-        if(c == "S"){
-            sum(a, b);
+        else if(c == "S"){
+            sub(a, b);
         }
-        if(c == "M"){
-            sum(a, b);
+        else if(c == "M"){
+            mult(a, b);
         }
-        if(c == "D"){
-            sum(a, b);
+        else if(c == "D"){
+            div(a, b);
         }
+        sc.close();
     }
 }
